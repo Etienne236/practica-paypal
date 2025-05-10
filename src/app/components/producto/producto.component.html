@@ -1,0 +1,18 @@
+<body>
+  <h2>Catálogo de Productos</h2>
+  <div class="form">
+    <p style="text-align:center;">TEC-HUB HARDWARE Y ELECTRONICA</p>
+    <div class="productos">
+      <div *ngFor="let producto of productos" class="producto">
+        <img [src]="producto.imagen" alt="{{ producto.nombre }}" />
+        <h3>{{ producto.nombre }}</h3>
+        <p>Precio: ${{ producto.precioP }}</p>
+        <button (click)="agregarAlCarrito(producto)">Agregar al carrito</button>
+      </div>
+    </div>
+    <div style="margin-top: 20px;">
+      <button (click)="irAlCarrito()">Ir al Carrito</button>
+      <button (click)="irAlInventario()">Ir al Inventario</button>
+    </div>
+  </div>
+</body>

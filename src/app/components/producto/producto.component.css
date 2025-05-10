@@ -1,0 +1,86 @@
+body {
+  font-family: 'Verdana', sans-serif;
+  background-color: #e8f5e9;
+  color: #444;
+  margin: 0;
+  padding: 25px;
+}
+
+h2 {
+  text-align: center;
+  color: #4CAF50;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #388E3C;
+}
+
+.form {
+  background-color: #f9f9f9;
+  border: 2px solid #bbb;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #bbb;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.producto {
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.producto:hover {
+  transform: scale(1.08);
+}
+
+.producto img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-bottom: 2px solid #ccc;
+}
+
+.producto h3 {
+  margin: 12px 0 8px;
+  font-size: 1.2rem;
+}
+
+.producto p {
+  color: #555;
+  margin: 8px 0;
+}

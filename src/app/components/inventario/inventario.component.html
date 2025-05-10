@@ -1,0 +1,33 @@
+<h2>Inventario</h2>
+
+<!-- Formulario para agregar productos -->
+<div class="form">
+  <input type="text" [(ngModel)]="nuevoProducto.nombre" placeholder="Nombre del producto">
+  <input type="number" [(ngModel)]="nuevoProducto.precioP" placeholder="Precio">
+  <input type="text" [(ngModel)]="nuevoProducto.imagen" placeholder="URL de imagen">
+  <input type="number" [(ngModel)]="nuevoProducto.cantidad" placeholder="Cantidad">
+  <button (click)="agregarProducto()">Agregar Producto</button>
+</div>
+
+<!-- Lista de productos en inventario -->
+<div class="productos">
+  <div *ngFor="let producto of productos" class="producto">
+    <img [src]="producto.imagen" alt="{{ producto.nombre }}">
+    <h3>{{ producto.nombre }}</h3>
+    <p>Precio: ${{ producto.precioP }}</p>
+    <p>Cantidad: {{ producto.cantidad }}</p>
+    <button (click)="editarProducto(producto)">Editar</button>
+    <button (click)="eliminarProducto(producto.id)">Eliminar</button>
+  </div>
+</div>
+
+<!-- Formulario de edición -->
+<div *ngIf="productoSeleccionado" class="form">
+  <h2>Editar Producto</h2>
+  <input type="text" [(ngModel)]="productoSeleccionado.nombre" placeholder="Nombre del producto">
+  <input type="number" [(ngModel)]="productoSeleccionado.precioP" placeholder="Precio">
+  <input type="text" [(ngModel)]="productoSeleccionado.imagen" placeholder="URL de imagen">
+  <input type="number" [(ngModel)]="productoSeleccionado.cantidad" placeholder="Cantidad">
+  <button (click)="guardarCambios()">Guardar Cambios</button>
+  <button (click)="cancelarEdicion()">Cancelar</button>
+</div>

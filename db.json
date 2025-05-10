@@ -1,0 +1,60 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Transistor TIP35",
+      "precioP": 38.80,
+      "cantidad": 10,
+      "imagen": "assets/img/transistor.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Resistencia 1k",
+      "precioP": 0.80,
+      "cantidad": 15,
+      "imagen": "assets/img/resistencia.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Multimetro",
+      "precioP": 319.00,
+      "cantidad": 5,
+      "imagen": "assets/img/multimetro.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Potenciometro",
+      "precioP": 9.99,
+      "cantidad": 8,
+      "imagen": "assets/img/potenciometro.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Capacitor",
+      "precioP": 2.99,
+      "cantidad": 10,
+      "imagen": "assets/img/capacitor.jpeg"
+    },
+    {
+      "id": 6,
+      "nombre": "Arduino",
+      "precioP": 300,
+      "cantidad": 10,
+      "imagen": "assets/img/arduino.jpeg"
+    },
+    {
+      "id": 7,
+      "nombre": "Leds",
+      "precioP": 2,
+      "cantidad": 10,
+      "imagen": "assets/img/leds.jpeg"
+    },
+    {
+      "id": 8,
+      "nombre": "Caimanes ",
+      "precioP": 20,
+      "cantidad": 10,
+      "imagen": "assets/img/caimanes.jpeg"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productos>
+    <producto>
+        <id>1</id>
+        <nombre>Transistor TIP35</nombre>
+        <precio>38.80</precio>
+        <cantidad>10</cantidad>
+        <imagen>assets/img/transistor.jpg</imagen>
+    </producto>
+    <producto>
+        <id>2</id>
+        <nombre>Resistencia 1k</nombre>
+        <precio>0.80</precio>
+        <cantidad>15</cantidad>
+        <imagen>assets/img/resistencia.jpg</imagen>
+    </producto>
+    <producto>
+        <id>3</id>
+        <nombre>Multimetro</nombre>
+        <precio>319.00</precio>
+        <cantidad>5</cantidad>
+        <imagen>assets/img/multimetro.jpg</imagen>
+    </producto>
+    <producto>
+        <id>4</id>
+        <nombre>Potenciometro</nombre>
+        <precio>9.99</precio>
+        <cantidad>8</cantidad>
+        <imagen>assets/img/potenciometro.jpg</imagen>
+    </producto>
+</productos>
